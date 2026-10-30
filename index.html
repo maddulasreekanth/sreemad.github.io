@@ -1,544 +1,408 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sreekanth Maddula | QA Leader & Test Manager</title>
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Google Fonts & Font Awesome Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    @media print {
-      header, #filter-buttons, .no-print { display: none !important; }
-      body { background-color: #ffffff; color: #000000; }
-      .print-border { border: 1px solid #e2e8f0 !important; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreekanth Maddula · Quality Assurance Leader & Senior QA Engineer</title>
+    <link rel="icon" href="favicons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-stone-50 text-neutral-800 antialiased min-h-screen flex flex-col selection:bg-neutral-200">
-
-  <!-- ================= TOP NAVIGATION ================= -->
-  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-neutral-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div>
-          <span class="text-base font-bold tracking-tight text-neutral-900 uppercase">Sreekanth Maddula</span>
-          <span class="hidden md:inline text-xs text-neutral-500 ml-3 pl-3 border-l border-neutral-300">QA Leadership & Test Operations</span>
-        </div>
-
-        <nav class="hidden md:flex items-center space-x-6 text-xs uppercase tracking-wider font-medium text-neutral-600">
-          <a href="#about" class="hover:text-neutral-950 transition">Overview</a>
-          <a href="#competencies" class="hover:text-neutral-950 transition">Competencies</a>
-          <a href="#case-studies" class="hover:text-neutral-950 transition">Programs</a>
-          <a href="#experience" class="hover:text-neutral-950 transition">Experience</a>
-          <a href="#certifications" class="hover:text-neutral-950 transition">Credentials</a>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#about" class="active">about</a>
+            <a href="#skills">skills</a>
+            <a href="#experience">experience</a>
+            <a href="#education">education & certs</a>
+            <a href="files/Sreekanth_Maddula_CV.pdf" download="Sreekanth_Maddula_CV.pdf" class="nav-cv-pill" title="Download Curriculum Vitae (PDF)">cv (pdf) &#8681;</a>
+            <a href="#contact">contact</a>
         </nav>
 
-        <div class="flex items-center space-x-3">
-          <a href="mailto:sreekanthmaddula@ohi.com" class="hidden sm:inline-flex items-center px-3.5 py-1.5 text-xs font-medium rounded border border-neutral-300 text-neutral-700 bg-white hover:bg-neutral-100 transition">
-            Contact
-          </a>
-          <button onclick="downloadCV()" class="inline-flex items-center px-3.5 py-1.5 text-xs font-medium rounded bg-neutral-900 text-white hover:bg-neutral-800 transition">
-            Download CV
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
+        <header id="about">
+            <div class="header-content">
+                <div class="intro">
+                    <h1>Sreekanth Maddula</h1>
+                    <p class="tagline">Quality Assurance Leader · Senior QA Engineering Specialist<span class="cursor">|</span></p>
 
-  <!-- ================= HERO HEADER ================= -->
-  <section class="bg-white border-b border-neutral-200 py-12 lg:py-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <div class="flex items-center gap-3 text-xs uppercase tracking-wider font-semibold text-neutral-600 mb-3">
-          <span>Sydney NSW, Australia</span>
-          <span>•</span>
-          <span>18+ Years Industry Practice</span>
-        </div>
-        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-950">
-          QA Leader & Test Laboratory Operations Specialist
-        </h1>
-        <p class="text-base text-neutral-600 mt-4 leading-relaxed font-normal">
-          Directing enterprise test laboratory staging, hardware/software verification programs, supplier technical audits, and automated quality governance frameworks across mission-critical systems.
-        </p>
-      </div>
+                    <!-- Top Contact & Location -->
+                    <div class="top-contact-list">
+                        <div class="top-contact-item">
+                            <span class="icon">📍</span>
+                            <span class="label">Location:</span>
+                            <span><strong>Sydney NSW 2148, Australia</strong></span>
+                        </div>
+                        <div class="top-contact-item">
+                            <span class="icon">📞</span>
+                            <span class="label">Phone:</span>
+                            <a href="tel:+61413xxxxxx">+61- 413 xxx xxx</a>
+                        </div>
+                        <div class="top-contact-item">
+                            <span class="icon">✉</span>
+                            <span class="label">Email:</span>
+                            <a href="mailto:sreekanthmaddula@hio.com" class="email">sreekanthmaddula@hio.com</a>
+                        </div>
+                    </div>
 
-      <!-- Key Metrics Strip -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 pt-8 border-t border-neutral-200 text-neutral-900">
-        <div>
-          <div class="text-2xl font-bold">18+</div>
-          <div class="text-xs text-neutral-500 uppercase tracking-wide mt-0.5">Years Experience</div>
-        </div>
-        <div>
-          <div class="text-2xl font-bold">85%</div>
-          <div class="text-xs text-neutral-500 uppercase tracking-wide mt-0.5">Automated Coverage</div>
-        </div>
-        <div>
-          <div class="text-2xl font-bold">45%</div>
-          <div class="text-xs text-neutral-500 uppercase tracking-wide mt-0.5">UAT Defect Reduction</div>
-        </div>
-        <div>
-          <div class="text-2xl font-bold">5</div>
-          <div class="text-xs text-neutral-500 uppercase tracking-wide mt-0.5">Agile & PMP Certifications</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= MAIN CONTENT ================= -->
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 w-full">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-
-      <!-- ================= LEFT COLUMN: PRIMARY DOSSIER (8 COLS) ================= -->
-      <div class="lg:col-span-8 space-y-12">
- <div class="lg:col-span-8 space-y-12">
-        <!-- EXECUTIVE PROFILE -->
-        <section id="about">
-          <h2 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-3">01 / Profile</h2>
-          <div class="bg-white border border-neutral-200 p-6 rounded">
-            <h3 class="text-lg font-bold text-neutral-950 mb-3">Executive Summary</h3>
-            <div class="text-neutral-700 space-y-3 leading-relaxed text-sm">
-              <p>
-                Demonstrated engineering leadership with more than 18 years driving end-to-end quality assurance strategies, hardware/software test laboratory staging, and multi-tier verification pipelines.
-              </p>
-              <p>
-                Specialized in architecting rigorous test governance frameworks, establishing supplier audit protocols, and ensuring transactional integrity across connected device platforms (telemetry messaging, roadside dispatch units, IoT, and high-concurrency systems).
-              </p>
-              <div class="border-l-2 border-neutral-900 pl-4 py-1 mt-4 text-xs text-neutral-600">
-                <span class="font-semibold text-neutral-900">Objective:</span> Elevating test governance, laboratory operations, and supplier performance for enterprise-scale engineering teams.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- CORE COMPETENCY PILLARS -->
-        <section id="competencies">
-          <h2 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-3">02 / Core Competencies</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            
-            <div class="bg-white border border-neutral-200 p-5 rounded">
-              <h3 class="text-sm font-bold text-neutral-900 mb-1">QA Governance & QMS</h3>
-              <p class="text-xs text-neutral-600 leading-relaxed">
-                Quality Management Systems, verification & validation (V&V), audit readiness, compliance governance, and enterprise test policy design.
-              </p>
-            </div>
-
-            <div class="bg-white border border-neutral-200 p-5 rounded">
-              <h3 class="text-sm font-bold text-neutral-900 mb-1">Laboratory & HIL Testing</h3>
-              <p class="text-xs text-neutral-600 leading-relaxed">
-                Hardware-in-the-Loop simulation, laboratory staging configurations, sensor telemetry messaging, and microservice integration.
-              </p>
-            </div>
-
-            <div class="bg-white border border-neutral-200 p-5 rounded">
-              <h3 class="text-sm font-bold text-neutral-900 mb-1">Supplier Quality & Integration</h3>
-              <p class="text-xs text-neutral-600 leading-relaxed">
-                Vendor verification standards, API contract validation, SLA compliance governance, and pre-deployment quality gating.
-              </p>
-            </div>
-
-            <div class="bg-white border border-neutral-200 p-5 rounded">
-              <h3 class="text-sm font-bold text-neutral-900 mb-1">Defect Prevention & RCA</h3>
-              <p class="text-xs text-neutral-600 leading-relaxed">
-                Root Cause Analysis, CAPA, Failure Mode & Effects Analysis (FMEA), high-concurrency SQL validation, and Traceability Matrices (RTM).
-              </p>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- CASE STUDIES / PROGRAM PORTFOLIO -->
-        <section id="case-studies">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-3">
-            <h2 class="text-xs uppercase tracking-widest font-semibold text-neutral-500">03 / Case Studies & Programs</h2>
-            
-            <!-- Filters -->
-            <div class="flex items-center space-x-1 text-xs" id="filter-buttons">
-              <button onclick="filterProjects('all', this)" class="filter-btn px-2.5 py-1 rounded bg-neutral-900 text-white">All</button>
-              <button onclick="filterProjects('lab', this)" class="filter-btn px-2.5 py-1 rounded text-neutral-600 hover:text-neutral-900">Lab & Telemetry</button>
-              <button onclick="filterProjects('automation', this)" class="filter-btn px-2.5 py-1 rounded text-neutral-600 hover:text-neutral-900">DevOps & Automation</button>
-              <button onclick="filterProjects('supplier', this)" class="filter-btn px-2.5 py-1 rounded text-neutral-600 hover:text-neutral-900">Supplier Quality</button>
-            </div>
-          </div>
-
-          <div class="space-y-4">
-
-            <!-- Study 1 -->
-            <article class="project-card bg-white border border-neutral-200 p-5 rounded" data-cat="automation">
-              <div class="flex justify-between items-baseline text-xs text-neutral-500 mb-1">
-                <span class="font-semibold text-neutral-900 uppercase">WNS Global Services</span>
-                <span>2025 – Present</span>
-              </div>
-              <h3 class="text-sm font-bold text-neutral-950">
-                Automated Test Laboratory & Regression Acceleration Framework
-              </h3>
-              <p class="text-xs text-neutral-600 mt-2 leading-relaxed">
-                Standardized staging protocols across dedicated test environments, expanding automated regression coverage from 35% to 85% and compressing regression cycles from 5 days to under 18 hours using Azure DevOps.
-              </p>
-              <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-neutral-100 text-[11px] text-neutral-600">
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">Azure DevOps</span>
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">Selenium WebDriver</span>
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">RestSharp</span>
-                <span class="font-semibold text-neutral-900 border border-neutral-300 px-2 py-0.5 rounded">-45% Defect Slippage</span>
-              </div>
-            </article>
-
-            <!-- Study 2 -->
-            <article class="project-card bg-white border border-neutral-200 p-5 rounded" data-cat="lab">
-              <div class="flex justify-between items-baseline text-xs text-neutral-500 mb-1">
-                <span class="font-semibold text-neutral-900 uppercase">RAA (Royal Automobile Association)</span>
-                <span>2023 – 2025</span>
-              </div>
-              <h3 class="text-sm font-bold text-neutral-950">
-                Connected Vehicle Telemetry & Emergency Fleet Dispatch Verification
-              </h3>
-              <p class="text-xs text-neutral-600 mt-2 leading-relaxed">
-                Directed hardware-in-the-loop laboratory testing for vehicle tracking modules, telemetry messaging packets, and microservices across member dispatch systems. Engineered SQL suites verifying transactional integrity under high concurrency.
-              </p>
-              <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-neutral-100 text-[11px] text-neutral-600">
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">Hardware-in-the-Loop</span>
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">GPS / Telemetry</span>
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">Relational SQL</span>
-                <span class="font-semibold text-neutral-900 border border-neutral-300 px-2 py-0.5 rounded">-35% Resolution Cycles</span>
-              </div>
-            </article>
-
-            <!-- Study 3 -->
-            <article class="project-card bg-white border border-neutral-200 p-5 rounded" data-cat="supplier">
-              <div class="flex justify-between items-baseline text-xs text-neutral-500 mb-1">
-                <span class="font-semibold text-neutral-900 uppercase">Honeywell</span>
-                <span>2022 – 2023</span>
-              </div>
-              <h3 class="text-sm font-bold text-neutral-950">
-                Industrial Automation & Sensor Telemetry Supplier Quality Gating
-              </h3>
-              <p class="text-xs text-neutral-600 mt-2 leading-relaxed">
-                Managed laboratory test setups and simulated hardware feeds for automated warehouse controls. Audited third-party firmware releases before deployment, resolving API and persistence bottlenecks via Splunk and AWS CloudWatch.
-              </p>
-              <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-neutral-100 text-[11px] text-neutral-600">
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">Splunk / Dynatrace</span>
-                <span class="bg-neutral-100 px-2 py-0.5 rounded">Firmware V&V</span>
-                <span class="font-semibold text-neutral-900 border border-neutral-300 px-2 py-0.5 rounded">50% Shorter Regressions</span>
-              </div>
-            </article>
-
-          </div>
-        </section>
-
-        <!-- CAREER HISTORY -->
-        <section id="experience">
-          <h2 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-3">04 / Experience</h2>
-          <div class="bg-white border border-neutral-200 p-6 rounded divide-y divide-neutral-200 space-y-6">
-
-            <!-- WNS -->
-            <div class="pt-6 first:pt-0">
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h3 class="text-sm font-bold text-neutral-950">Test Lead / Senior QA Automation Engineer</h3>
-                <span class="text-xs text-neutral-500 font-medium">Sep 2025 – Present</span>
-              </div>
-              <div class="text-xs text-neutral-600 mt-0.5">WNS Global Services • Sydney, Australia</div>
-              <ul class="mt-3 space-y-1.5 text-xs text-neutral-600 list-disc list-outside ml-4">
-                <li>Direct end-to-end quality governance, automated frameworks, and verification pipelines across digital platforms.</li>
-                <li>Operate dedicated staging labs, establishing execution protocols that elevated regression automation coverage to 85%.</li>
-                <li>Audit external supplier integration endpoints, decreasing defect slippage to UAT by 45%.</li>
-                <li>Monitor CI/CD test runs in Azure DevOps, compressing regression cycles to under 18 hours.</li>
-              </ul>
-            </div>
-
-            <!-- RAA -->
-            <div class="pt-6">
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h3 class="text-sm font-bold text-neutral-950">Test Lead / Senior QA Engineer</h3>
-                <span class="text-xs text-neutral-500 font-medium">Jul 2023 – Sep 2025</span>
-              </div>
-              <div class="text-xs text-neutral-600 mt-0.5">RAA (Royal Automobile Association) • Adelaide, Australia</div>
-              <ul class="mt-3 space-y-1.5 text-xs text-neutral-600 list-disc list-outside ml-4">
-                <li>Led quality strategy across fleet dispatch, vehicle tracking, policy engines, and customer applications.</li>
-                <li>Coordinated hardware and software validation suites in laboratory environments for telemetry devices and messaging queues.</li>
-                <li>Verified supplier deliverable adherence against technical specifications, reducing defect turnaround by 35%.</li>
-              </ul>
-            </div>
-
-            <!-- Honeywell -->
-            <div class="pt-6">
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h3 class="text-sm font-bold text-neutral-950">Test Engineer</h3>
-                <span class="text-xs text-neutral-500 font-medium">Jul 2022 – Jun 2023</span>
-              </div>
-              <div class="text-xs text-neutral-600 mt-0.5">Honeywell • Adelaide, Australia</div>
-              <ul class="mt-3 space-y-1.5 text-xs text-neutral-600 list-disc list-outside ml-4">
-                <li>Designed multi-tier verification procedures for industrial automation and building management platforms.</li>
-                <li>Simulated hardware telemetry streams in lab benches to measure throughput, sensor drift, and latency.</li>
-                <li>Reduced mean-time-to-resolution on database and API issues by 40% through systematic RCA via Splunk.</li>
-              </ul>
-            </div>
-
-            <!-- Optum -->
-            <div class="pt-6">
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h3 class="text-sm font-bold text-neutral-950">Project Test Lead / Senior QA Analyst</h3>
-                <span class="text-xs text-neutral-500 font-medium">Sep 2011 – Jul 2022</span>
-              </div>
-              <div class="text-xs text-neutral-600 mt-0.5">Optum • Hyderabad, India</div>
-              <ul class="mt-3 space-y-1.5 text-xs text-neutral-600 list-disc list-outside ml-4">
-                <li>Steered quality operations across distributed teams within a Scaled Agile (SAFe) model.</li>
-                <li>Deployed automated API verification pipelines (REST, SOAP, GraphQL), boosting cycle throughput by 30%.</li>
-                <li>Delivered executive risk assessments, quality scorecards, and test closure certifications.</li>
-              </ul>
-            </div>
-
-            <!-- Footprint -->
-            <div class="pt-4 text-xs text-neutral-500">
-              <span class="font-semibold text-neutral-700">Earlier Engagements:</span> Associate at NetCracker (2009–2011) | Senior Software Engineer & Consultant at Capgemini (2006–2009).
-            </div>
-
-          </div>
-        </section>
-
-        <!-- CREDENTIALS & ACADEMICS -->
-        <section id="certifications">
-          <h2 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-3">05 / Credentials & Education</h2>
-          <div class="bg-white border border-neutral-200 p-6 rounded space-y-6">
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div class="border border-neutral-200 p-3 rounded">
-                <div class="text-xs font-bold text-neutral-900">Project Management Professional (PMP)</div>
-                <div class="text-[11px] text-neutral-500 mt-0.5">Project Management Institute (PMI)</div>
-              </div>
-              <div class="border border-neutral-200 p-3 rounded">
-                <div class="text-xs font-bold text-neutral-900">Certified SAFe Agilist</div>
-                <div class="text-[11px] text-neutral-500 mt-0.5">Scaled Agile, Inc.</div>
-              </div>
-              <div class="border border-neutral-200 p-3 rounded">
-                <div class="text-xs font-bold text-neutral-900">SAFe 4.0 Product Manager / PO</div>
-                <div class="text-[11px] text-neutral-500 mt-0.5">Scaled Agile, Inc.</div>
-              </div>
-              <div class="border border-neutral-200 p-3 rounded">
-                <div class="text-xs font-bold text-neutral-900">Professional Scrum Master I (PSM-1)</div>
-                <div class="text-[11px] text-neutral-500 mt-0.5">Scrum.org</div>
-              </div>
-              <div class="border border-neutral-200 p-3 rounded sm:col-span-2">
-                <div class="text-xs font-bold text-neutral-900">Disciplined Agile Scrum Master (DASM)</div>
-                <div class="text-[11px] text-neutral-500 mt-0.5">Project Management Institute (PMI)</div>
-              </div>
-            </div>
-
-            <div class="pt-4 border-t border-neutral-200 text-xs space-y-2">
-              <div class="flex justify-between items-baseline">
-                <div>
-                  <span class="font-bold text-neutral-900">Master of Computer Applications (M.C.A.)</span>
-                  <div class="text-neutral-500">University of Madras, India</div>
+                    <!-- CV Download & Direct Actions -->
+                    <div class="top-actions" style="margin-top: 1.25rem;">
+                        <a href="files/Sreekanth_Maddula_CV.pdf" download="Sreekanth_Maddula_CV.pdf" class="btn-download-cv">
+                            <span>&#8681;</span> Download CV (PDF)
+                        </a>
+                        <a href="cv.html" target="_blank" class="btn-view-cv">
+                            <span>📄</span> View CV Format &rarr;
+                        </a>
+                    </div>
                 </div>
-                <span class="text-neutral-500">2004</span>
-              </div>
-              <div class="flex justify-between items-baseline pt-2">
-                <div>
-                  <span class="font-bold text-neutral-900">Bachelor of Science (B.Sc.) in Computer Science</span>
-                  <div class="text-neutral-500">Sri Krishnadevaraya University, India</div>
+                <div class="portrait-container">
+                    <img src="files/sree1.jpeg" alt="Sreekanth Maddula" class="portrait">
                 </div>
-                <span class="text-neutral-500">2001</span>
-              </div>
             </div>
+        </header>
 
-          </div>
-        </section>
+        <main>
+            <!-- Professional Profile -->
+            <section class="about">
+                <h2>// professional profile</h2>
+                <p>
+                    Accomplished Quality Assurance Leader and Senior QA Engineering Specialist with <strong>18+ years of experience</strong> leading comprehensive quality assurance, test laboratory operations, and multi-tier verification programs. Proven track record in building scalable test governance frameworks, evaluating supplier deliverables, and driving operational performance across complex enterprise and connected product architectures.
+                </p>
+                <p>
+                    Adept at doing deep-dive defect investigations and translating technical data into executive-level business recommendations that deliver sustained quality improvement. Highly skilled in collaborating across international operations, aligning with third-party sourcing partners, and developing high-performing, geographically distributed teams.
+                </p>
+                <p>
+                    Targeting the Quality Assurance and Laboratory Testing leadership role at <strong>GWA</strong> to elevate quality standards, optimize supplier performance, and protect brand integrity across the global supply network.
+                </p>
 
-      </div>
+                <!-- Impact Highlights -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">18+</div>
+                        <div class="stat-label">Years QA & Leadership</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">85%</div>
+                        <div class="stat-label">Automation Coverage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">45%</div>
+                        <div class="stat-label">Defect Slippage Drop</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">&lt; 18h</div>
+                        <div class="stat-label">Full Regression Time</div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- ================= RIGHT COLUMN: SIDE PANEL (4 COLS) ================= -->
-      <aside class="lg:col-span-4 space-y-6">
+            <!-- Core Competencies & Technical Skills -->
+            <section id="skills" class="skills-section">
+                <h2>// core competencies & technical skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-title">
+                            <span class="skill-bullet">&#9670;</span>
+                            <span>Quality Assurance Leadership</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Quality Management Systems (QMS)</span>
+                            <span class="skill-pill">Quality Governance</span>
+                            <span class="skill-pill">Audit Readiness</span>
+                            <span class="skill-pill">Verification & Validation (V&V)</span>
+                            <span class="skill-pill">International Team Leadership</span>
+                        </div>
+                    </div>
 
-        <!-- CONTACT & DOSSIER SUMMARY -->
-        <div class="bg-white border border-neutral-200 p-5 rounded">
-          <h3 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-4">Contact & Overview</h3>
-          
-          <div class="space-y-3 text-xs">
-            <div>
-              <span class="text-neutral-500 block">Name</span>
-              <span class="font-semibold text-neutral-900">Sreekanth Maddula</span>
-            </div>
-            <div>
-              <span class="text-neutral-500 block">Location</span>
-              <span class="text-neutral-900">Sydney NSW 2148, Australia</span>
-            </div>
-            <div>
-              <span class="text-neutral-500 block">Status</span>
-              <span class="text-neutral-900 font-medium">Australian Citizen</span>
-            </div>
-            <div>
-              <span class="text-neutral-500 block">Email</span>
-              <a href="mailto:sreekanthmaddula@ohi.com" class="text-neutral-900 underline hover:text-neutral-600">sreekanthmaddula@outlook.com</a>
-            </div>
-            <div>
-              <span class="text-neutral-500 block">Phone</span>
-              <span class="text-neutral-900">+61- 413 163 xxx</span>
-            </div>
-          </div>
+                    <div class="skill-card">
+                        <div class="skill-title">
+                            <span class="skill-bullet">&#9670;</span>
+                            <span>Laboratory & Testing Operations</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Test Laboratory Management</span>
+                            <span class="skill-pill">Staging Environments</span>
+                            <span class="skill-pill">Hardware-in-the-Loop Simulation</span>
+                            <span class="skill-pill">Test Automation Frameworks</span>
+                            <span class="skill-pill">Connected Device Verification</span>
+                        </div>
+                    </div>
 
-          <div class="mt-6 pt-5 border-t border-neutral-200 space-y-2">
-            <button onclick="copyContact()" class="w-full text-center py-2 px-3 bg-neutral-900 text-white rounded text-xs font-medium hover:bg-neutral-800 transition">
-              Copy Contact Details
-            </button>
-            <a href="mailto:sreekanthmaddula@outlook.com" class="w-full block text-center py-2 px-3 border border-neutral-300 text-neutral-700 rounded text-xs font-medium hover:bg-neutral-100 transition">
-              Send Direct Email
-            </a>
-          </div>
-        </div>
+                    <div class="skill-card">
+                        <div class="skill-title">
+                            <span class="skill-bullet">&#9670;</span>
+                            <span>Supplier Quality & Integration</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Supplier Performance Management</span>
+                            <span class="skill-pill">Third-Party Vendor Verification</span>
+                            <span class="skill-pill">API Contract Testing</span>
+                            <span class="skill-pill">SLA Compliance</span>
+                            <span class="skill-pill">Data Feeds & Telemetry</span>
+                        </div>
+                    </div>
 
-        <!-- TECHNICAL PROFICIENCY -->
-        <div class="bg-white border border-neutral-200 p-5 rounded">
-          <h3 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-4">Core Technology Focus</h3>
-          
-          <div class="space-y-3 text-xs">
-            <div>
-              <div class="flex justify-between text-neutral-800 mb-1">
-                <span>Test Automation & Frameworks</span>
-                <span class="font-semibold">95%</span>
-              </div>
-              <div class="w-full bg-neutral-100 h-1 rounded">
-                <div class="bg-neutral-900 h-1 rounded" style="width: 95%"></div>
-              </div>
-            </div>
+                    <div class="skill-card">
+                        <div class="skill-title">
+                            <span class="skill-bullet">&#9670;</span>
+                            <span>Defect Prevention & Analysis</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Root Cause Analysis (RCA)</span>
+                            <span class="skill-pill">CAPA</span>
+                            <span class="skill-pill">FMEA</span>
+                            <span class="skill-pill">Traceability Matrices (RTM)</span>
+                            <span class="skill-pill">Defect Triage Leadership</span>
+                        </div>
+                    </div>
 
-            <div>
-              <div class="flex justify-between text-neutral-800 mb-1">
-                <span>Laboratory Operations & HIL Telemetry</span>
-                <span class="font-semibold">90%</span>
-              </div>
-              <div class="w-full bg-neutral-100 h-1 rounded">
-                <div class="bg-neutral-900 h-1 rounded" style="width: 90%"></div>
-              </div>
-            </div>
+                    <div class="skill-card">
+                        <div class="skill-title">
+                            <span class="skill-bullet">&#9670;</span>
+                            <span>Tools & Automation Ecosystem</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Selenium WebDriver</span>
+                            <span class="skill-pill">RestSharp</span>
+                            <span class="skill-pill">Postman</span>
+                            <span class="skill-pill">Splunk</span>
+                            <span class="skill-pill">Dynatrace</span>
+                            <span class="skill-pill">New Relic</span>
+                            <span class="skill-pill">Azure DevOps</span>
+                            <span class="skill-pill">JIRA</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">C#</span>
+                            <span class="skill-pill">Microsoft Fabric</span>
+                            <span class="skill-pill">Power BI</span>
+                        </div>
+                    </div>
 
-            <div>
-              <div class="flex justify-between text-neutral-800 mb-1">
-                <span>Observability & RCA (Splunk, Dynatrace)</span>
-                <span class="font-semibold">90%</span>
-              </div>
-              <div class="w-full bg-neutral-100 h-1 rounded">
-                <div class="bg-neutral-900 h-1 rounded" style="width: 90%"></div>
-              </div>
-            </div>
+                    <div class="skill-card">
+                        <div class="skill-title">
+                            <span class="skill-bullet">&#9670;</span>
+                            <span>Operational Excellence & Delivery</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Continuous Process Improvement</span>
+                            <span class="skill-pill">Scaled Agile (SAFe) Delivery</span>
+                            <span class="skill-pill">Scrum Framework</span>
+                            <span class="skill-pill">Risk Mitigation</span>
+                            <span class="skill-pill">Power Strategies & Standards</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div>
-              <div class="flex justify-between text-neutral-800 mb-1">
-                <span>Governance & Pipelines (Azure DevOps, SQL)</span>
-                <span class="font-semibold">95%</span>
-              </div>
-              <div class="w-full bg-neutral-100 h-1 rounded">
-                <div class="bg-neutral-900 h-1 rounded" style="width: 95%"></div>
-              </div>
-            </div>
+            <!-- Professional Experience -->
+            <section id="experience" class="experience-section">
+                <h2>// professional experience</h2>
 
-            <div>
-              <div class="flex justify-between text-neutral-800 mb-1">
-                <span>Languages (Python, Java, C#)</span>
-                <span class="font-semibold">85%</span>
-              </div>
-              <div class="w-full bg-neutral-100 h-1 rounded">
-                <div class="bg-neutral-900 h-1 rounded" style="width: 85%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="exp-timeline">
+                    <!-- WNS Global Services -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <span class="exp-company"><a href="https://www.wns.com/" target="_blank" rel="noopener">WNS Global Services</a></span>
+                            <span class="exp-period">Sep 2025 – Present</span>
+                        </div>
+                        <div class="exp-subhead">
+                            <span class="exp-role">Test Lead / Senior QA Automation Engineer</span>
+                            <span class="exp-location">Sydney, Australia</span>
+                        </div>
+                        <p class="exp-desc">Digital transformation and BPM enterprise delivering automated solutions worldwide.</p>
+                        <ul class="exp-bullets">
+                            <li>Direct end-to-end quality assurance governance, leading automated testing frameworks and verification pipelines across high-volume digital workflows.</li>
+                            <li>Oversee dedicated test laboratory staging environments, establishing standard calibration and execution protocols that expanded automated regression coverage from 35% to 85%.</li>
+                            <li>Drive external supplier integration quality by auditing technical interfaces and establishing automated quality gates, reducing defect slippage to UAT by 45%.</li>
+                            <li>Track and monitor real-time system performance, leveraging Azure DevOps pipelines to compress full regression cycles from 5 days to under 18 hours.</li>
+                            <li>Excel in doing rigorous root cause investigations on escalated defects, translating complex technical findings into clear risk assessments for executive stakeholders.</li>
+                            <li>Facilitate cross-functional Agile sprint ceremonies with international product and engineering partners to refine technical requirements and prevent defect injection early in the SDLC.</li>
+                        </ul>
+                    </article>
 
-        <!-- STANDARDS & FRAMEWORKS -->
-        <div class="bg-white border border-neutral-200 p-5 rounded">
-          <h3 class="text-xs uppercase tracking-widest font-semibold text-neutral-500 mb-3">Governance Standards</h3>
-          <div class="flex flex-wrap gap-1.5 text-xs text-neutral-700">
-            <span class="border border-neutral-200 px-2 py-1 rounded bg-stone-50">QMS Policy</span>
-            <span class="border border-neutral-200 px-2 py-1 rounded bg-stone-50">FMEA & CAPA</span>
-            <span class="border border-neutral-200 px-2 py-1 rounded bg-stone-50">Vendor Audits</span>
-            <span class="border border-neutral-200 px-2 py-1 rounded bg-stone-50">SAFe Agile</span>
-            <span class="border border-neutral-200 px-2 py-1 rounded bg-stone-50">Contract Testing</span>
-            <span class="border border-neutral-200 px-2 py-1 rounded bg-stone-50">RTM Traceability</span>
-          </div>
-        </div>
+                    <!-- RAA -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <span class="exp-company"><a href="https://www.raa.com.au" target="_blank" rel="noopener">RAA (Royal Automobile Association)</a></span>
+                            <span class="exp-period">Apr 2023 – Sep 2025</span>
+                        </div>
+                        <div class="exp-subhead">
+                            <span class="exp-role">Test Lead / Senior QA Engineer</span>
+                            <span class="exp-location">Adelaide, Australia</span>
+                        </div>
+                        <p class="exp-desc">South Australia's premier member organisation providing motor, home, and travel insurance, roadside emergency dispatch, and vehicle fleet member services.</p>
+                        <ul class="exp-bullets">
+                            <li>Spearheaded the end-to-end quality assurance strategy across roadside fleet dispatch, asset tracking, motor policy systems, and digital portals.</li>
+                            <li>Managed software and connected device testing in dedicated laboratory environments, validating vehicle tracking units, GPS communication, and microservice transactions.</li>
+                            <li>Assessed external supplier software deliverables and data feeds, ensuring stringent adherence to technical specifications and cutting defect resolution cycles by 35%.</li>
+                            <li>Championed defect prevention and root cause analysis across fleet tracking services, isolating system bottlenecks to drive continuous process improvement.</li>
+                            <li>Authored complex SQL validation suites to safeguard transactional integrity, data consistency, and connected asset reliability across high-concurrency databases.</li>
+                            <li>Coordinated with international vendor partners and internal stakeholders, successfully building standardized test protocols and mentoring regional teams.</li>
+                        </ul>
+                    </article>
 
-      </aside>
+                    <!-- Honeywell -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <span class="exp-company"><a href="http://www.honeywell.com" target="_blank" rel="noopener">Honeywell</a></span>
+                            <span class="exp-period">Jul 2022 – Jun 2023</span>
+                        </div>
+                        <div class="exp-subhead">
+                            <span class="exp-role">Test Engineer</span>
+                            <span class="exp-location">Adelaide, Australia</span>
+                        </div>
+                        <p class="exp-desc">Global technology leader developing safety, security, and industrial automation solutions.</p>
+                        <ul class="exp-bullets">
+                            <li>Formulated and executed multi-tier test plans for industrial automation, warehouse management, and building systems platforms.</li>
+                            <li>Managed laboratory test configurations and simulated hardware data streams to verify sensor telemetry, system reliability, and overall performance.</li>
+                            <li>Partnered with third-party component supplier teams to evaluate firmware/software releases, identifying critical integration bugs prior to field deployment.</li>
+                            <li>Accelerated the average resolution time of complex database and API bottlenecks by 40% through systematic root cause analysis and proactive monitoring via Splunk and AWS CloudWatch.</li>
+                            <li>Streamlined testing procedures across enterprise release schedules, cutting overall regression cycles by 50% through reusable automation libraries.</li>
+                        </ul>
+                    </article>
 
+                    <!-- Optum - Project Test Lead -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <span class="exp-company"><a href="https://www.optum.com/" target="_blank" rel="noopener">Optum</a></span>
+                            <span class="exp-period">Dec 2018 – Jul 2022</span>
+                        </div>
+                        <div class="exp-subhead">
+                            <span class="exp-role">Project Test Lead</span>
+                            <span class="exp-location">Hyderabad, India</span>
+                        </div>
+                        <p class="exp-desc">Global health services and digital technology company operating in 150+ countries.</p>
+                        <ul class="exp-bullets">
+                            <li>Directed multi-squad quality assurance operations in a Scaled Agile (SAFe) environment, managing test strategy, resource forecasting, and formal quality sign-offs.</li>
+                            <li>Supervised system verification for core enterprise healthcare platforms, interfacing with external sourcing partners and global technology vendors.</li>
+                            <li>Implemented automated API and integration verification frameworks (REST, SOAP, GraphQL), elevating testing efficiency by 30%.</li>
+                            <li>Led cross-functional defect triage and technical reviews, identifying bugs systematically to safeguard release milestones and achieve a 25% increase in stakeholder satisfaction.</li>
+                            <li>Mentored and built technical capabilities across distributed testing teams, standardizing quality assurance metrics and best practices across the organization.</li>
+                        </ul>
+                    </article>
+
+                    <!-- Optum - Senior QA Analyst -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <span class="exp-company"><a href="https://www.optum.com/" target="_blank" rel="noopener">Optum</a></span>
+                            <span class="exp-period">Sep 2011 – Dec 2018</span>
+                        </div>
+                        <div class="exp-subhead">
+                            <span class="exp-role">Senior Q.A. Analyst / Q.A. Analyst</span>
+                            <span class="exp-location">Hyderabad, India</span>
+                        </div>
+                        <p class="exp-desc">Enterprise health technology systems and high-throughput data processing workflows.</p>
+                        <ul class="exp-bullets">
+                            <li>Authored comprehensive test plans, detailed test cases, and Requirements Traceability Matrices (RTM) for multi-tier enterprise applications.</li>
+                            <li>Executed rigorous functional, integration, regression, and performance verification across application and database layers.</li>
+                            <li>Published weekly technical quality metrics and defect dashboards, delivering actionable insights to senior leadership for process improvement.</li>
+                            <li>Enhanced core test workflows and tool utilization by 15%, ensuring robust verification across an expansive enterprise network.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- Earlier Career Summary -->
+                <div style="margin-top: 2.5rem;">
+                    <h2>// earlier career history</h2>
+                    <table class="prior-roles-table">
+                        <thead>
+                            <tr>
+                                <th>Period</th>
+                                <th>Role</th>
+                                <th>Company</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="period">May 2009 – Sep 2011</td>
+                                <td><strong>Associate, Prog/Analysis</strong></td>
+                                <td>NetCrackers</td>
+                                <td>Hyderabad, India</td>
+                            </tr>
+                            <tr>
+                                <td class="period">Jul 2008 – May 2009</td>
+                                <td><strong>Senior Software Engineer</strong></td>
+                                <td>Capgemini</td>
+                                <td>Hyderabad, India</td>
+                            </tr>
+                            <tr>
+                                <td class="period">Dec 2006 – Jul 2008</td>
+                                <td><strong>Consultant</strong></td>
+                                <td>Capgemini Consulting</td>
+                                <td>Mumbai, India</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Qualifications, Education & Certifications -->
+            <section id="education" class="education-section">
+                <h2>// qualifications & education</h2>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-degree">Master of Computer Applications (M.C.A.)</div>
+                        <div class="edu-school">University of Madras</div>
+                        <div class="edu-year">India · 2004</div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-degree">Bachelor of Science (B.Sc.) in Computer Science</div>
+                        <div class="edu-school">Sri Krishnadevaraya University</div>
+                        <div class="edu-year">India · 2001</div>
+                    </div>
+                </div>
+
+                <h2>// professional certifications</h2>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-title">Project Management Professional (PMP)</div>
+                        <div class="cert-issuer">Project Management Institute (PMI)</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">Certified SAFe Agilist</div>
+                        <div class="cert-issuer">Scaled Agile, Inc.</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">SAFe 4.0 Product Manager / Product Owner (PM/PO)</div>
+                        <div class="cert-issuer">Scaled Agile, Inc.</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">Professional Scrum Master I (PSM-1)</div>
+                        <div class="cert-issuer">Scrum.org</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">Disciplined Agile Scrum Master (DASM)</div>
+                        <div class="cert-issuer">Project Management Institute (PMI)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact-section">
+                <h2>// contact & location</h2>
+                <p class="contact">
+                    Currently based in <strong>Sydney NSW 2148, Australia</strong>. Open to discussions regarding senior quality assurance leadership, test laboratory operations, and enterprise verification programs.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span>&#9993; Email:</span>
+                        <a href="mailto:sreekanthmaddula@hio.com" class="email">sreekanthmaddula@hio.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>&#9742; Phone:</span>
+                        <a href="tel:+61413xxxxxx">+61- 413 xxx xxx</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>&#128205; Location:</span>
+                        <span>Sydney NSW 2148, Australia</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Sreekanth Maddula · Quality Assurance Leader &amp; Senior QA Engineering Specialist</p>
+        </footer>
     </div>
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="bg-white border-t border-neutral-200 py-8 text-center text-xs text-neutral-500">
-    <div class="max-w-6xl mx-auto px-4">
-      <p>© 2026 Sreekanth Maddula. Executive Dossier & Technical Portfolio.</p>
-    </div>
-  </footer>
-
-  <!-- ================= NOTIFICATION TOAST ================= -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-200 bg-neutral-900 text-white text-xs px-4 py-2.5 rounded shadow flex items-center gap-2">
-    <span id="toast-text">Copied to clipboard.</span>
-  </div>
-
-  <!-- ================= LOGIC ================= -->
-  <script>
-    function filterProjects(category, buttonEl) {
-      const cards = document.querySelectorAll('.project-card');
-      const buttons = document.querySelectorAll('.filter-btn');
-
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-neutral-900', 'text-white');
-        btn.classList.add('text-neutral-600');
-      });
-
-      if (buttonEl) {
-        buttonEl.classList.remove('text-neutral-600');
-        buttonEl.classList.add('bg-neutral-900', 'text-white');
-      }
-
-      cards.forEach(card => {
-        if (category === 'all' || card.getAttribute('data-cat') === category) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
-    function copyContact() {
-      const info = "Sreekanth Maddula | QA Leader\nPhone: +61- 413 xxx xxx\nEmail: sreekanthmaddula@ohi.com\nSydney NSW 2148, Australia";
-      navigator.clipboard.writeText(info).then(() => {
-        showToast("Contact details copied to clipboard.");
-      });
-    }
-
-    function downloadCV() {
-      showToast("Opening print dialogue...");
-      setTimeout(() => {
-        window.print();
-      }, 300);
-    }
-
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      const toastText = document.getElementById('toast-text');
-      toastText.innerText = message;
-      toast.classList.remove('translate-y-20', 'opacity-0');
-      setTimeout(() => {
-        toast.classList.add('translate-y-20', 'opacity-0');
-      }, 2500);
-    }
-  </script>
 </body>
 </html>

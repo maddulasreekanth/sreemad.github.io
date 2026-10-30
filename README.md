@@ -1,2 +1,3 @@
-# sreemad.github.io
-Quality Engineering Lead with 18+ yrs of experience architecting scalable web &amp; API automation frameworks (Playwright, Selenium, RestAssured). Bridging enterprise testing with Agentic AI, MCP servers, and custom productivity tools. Based in Sydney.
+# Sreekanth Maddula - Portfolio & CV
+
+Personal portfolio and curriculum vitae website for Sreekanth Maddula, Accomplished Quality Assurance Leader and Senior QA Engineering Specialist.

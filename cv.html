@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreekanth Maddula - Curriculum Vitae</title>
+    <link rel="icon" href="favicons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Standalone / Printable CV Styles */
+        body {
+            background: #fff;
+            color: #1a1a1a;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .cv-container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+            background: #fff;
+        }
+
+        .cv-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            margin-bottom: 2rem;
+            background: #f4f4f4;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+        }
+
+        .cv-toolbar a, .cv-toolbar button {
+            color: var(--link);
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 600;
+        }
+
+        .cv-toolbar button:hover, .cv-toolbar a:hover {
+            text-decoration: underline;
+        }
+
+        .cv-header {
+            border-bottom: 2px solid #222;
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-name {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.25rem;
+            color: #111;
+        }
+
+        .cv-role {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 0.6rem;
+        }
+
+        .cv-contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .cv-contact-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .cv-section {
+            margin-bottom: 1.75rem;
+        }
+
+        .cv-section-title {
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.35rem;
+            margin-bottom: 0.9rem;
+            color: #222;
+        }
+
+        .cv-text {
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #2c2c2c;
+            margin-bottom: 0.6rem;
+        }
+
+        .cv-skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-skills-table td {
+            padding: 0.45rem 0.5rem;
+            vertical-align: top;
+            border-bottom: 1px dotted #e5e5e5;
+        }
+
+        .cv-skills-table td.skill-cat {
+            width: 32%;
+            font-family: var(--font-mono);
+            font-weight: 600;
+            color: #222;
+        }
+
+        .cv-skills-table td.skill-items {
+            width: 68%;
+            font-family: var(--font-serif);
+            color: #333;
+        }
+
+        .cv-job {
+            margin-bottom: 1.5rem;
+            page-break-inside: avoid;
+        }
+
+        .cv-job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.2rem;
+        }
+
+        .cv-job-company {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .cv-job-dates {
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .cv-job-subhead {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.4rem;
+        }
+
+        .cv-job-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #0052a3;
+        }
+
+        .cv-job-loc {
+            font-size: 0.82rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .cv-job-desc {
+            font-family: var(--font-serif);
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.4rem;
+        }
+
+        .cv-bullets {
+            padding-left: 1.25rem;
+            margin: 0;
+        }
+
+        .cv-bullets li {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 0.35rem;
+            color: #2c2c2c;
+        }
+
+        .cv-edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cv-edu-item {
+            padding: 0.6rem 0.75rem;
+            background: #faf9f7;
+            border: 1px solid #eee;
+            border-radius: 3px;
+        }
+
+        .cv-edu-degree {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #111;
+        }
+
+        .cv-edu-school {
+            font-size: 0.82rem;
+            color: #555;
+        }
+
+        .cv-certs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem;
+        }
+
+        .cv-cert-item {
+            padding: 0.5rem 0.7rem;
+            background: #faf9f7;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+
+        .cv-cert-name {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .cv-cert-org {
+            font-size: 0.78rem;
+            color: #666;
+        }
+
+        @media print {
+            .cv-toolbar { display: none !important; }
+            body { font-size: 11pt; line-height: 1.45; }
+            .cv-container { max-width: 100%; padding: 0; }
+            .cv-job { page-break-inside: avoid; margin-bottom: 1.2rem; }
+            a { color: inherit; text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="cv-toolbar">
+            <a href="index.html">&larr; Back to Portfolio</a>
+            <div>
+                <a href="files/Sreekanth_Maddula_CV.pdf" download="Sreekanth_Maddula_CV.pdf" style="margin-right: 1.5rem;">[⬇ Download PDF]</a>
+                <button onclick="window.print()">[🖨 Print / Save as PDF]</button>
+            </div>
+        </div>
+
+        <header class="cv-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem;">
+            <div>
+                <h1 class="cv-name">Sreekanth Maddula</h1>
+                <div class="cv-role">Accomplished Quality Assurance Leader &amp; Senior QA Engineering Specialist</div>
+                <div class="cv-contact-row">
+                    <span>📍 Sydney NSW 2148, Australia</span>
+                    <span>📞 +61- 413 xxx xxx</span>
+                    <span>✉ sreekanthmaddula@hio.com</span>
+                </div>
+            </div>
+            <img src="files/sree1.jpeg" alt="Sreekanth Maddula" style="width: 95px; height: 95px; border-radius: 4px; object-fit: cover; border: 1px solid #ddd; flex-shrink: 0;">
+        </header>
+
+        <!-- Professional Profile -->
+        <section class="cv-section">
+            <div class="cv-section-title">// Professional Profile</div>
+            <p class="cv-text">
+                Accomplished Quality Assurance Leader and Senior QA Engineering Specialist with 18+ years of experience leading comprehensive quality assurance, test laboratory operations, and multi-tier verification programs. Proven track record in building scalable test governance frameworks, evaluating supplier deliverables, and driving operational performance across complex enterprise and connected product architectures.
+            </p>
+            <p class="cv-text">
+                Adept at doing deep-dive defect investigations and translating technical data into executive-level business recommendations that deliver sustained quality improvement. Highly skilled in collaborating across international operations, aligning with third-party sourcing partners, and developing high-performing, geographically distributed teams.
+            </p>
+            <p class="cv-text">
+                Targeting the Quality Assurance and Laboratory Testing leadership role at GWA to elevate quality standards, optimize supplier performance, and protect brand integrity across the global supply network.
+            </p>
+        </section>
+
+        <!-- Core Competencies & Technical Skills -->
+        <section class="cv-section">
+            <div class="cv-section-title">// Core Competencies &amp; Technical Skills</div>
+            <table class="cv-skills-table">
+                <tbody>
+                    <tr>
+                        <td class="skill-cat">Quality Assurance Leadership:</td>
+                        <td class="skill-items">Quality Management Systems (QMS), Quality Governance, Audit Readiness, Verification &amp; Validation (V&amp;V), International Team Leadership</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cat">Laboratory &amp; Testing Operations:</td>
+                        <td class="skill-items">Test Laboratory Management, Staging Environments, Hardware-in-the-Loop Simulation, Test Automation Frameworks, Connected Device Testing</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cat">Supplier Quality &amp; Integration:</td>
+                        <td class="skill-items">Supplier Performance Management, Third-Party Vendor Verification, API Contract Testing, SLA Compliance, Data Feeds &amp; Telemetry</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cat">Defect Prevention &amp; Analysis:</td>
+                        <td class="skill-items">Root Cause Analysis (RCA), CAPA, Failure Mode &amp; Effects Analysis (FMEA), Traceability Matrices (RTM), Defect Triage Leadership</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cat">Tools &amp; Technologies:</td>
+                        <td class="skill-items">Selenium WebDriver, RestSharp, Postman, Splunk, Dynatrace, New Relic, Azure DevOps, JIRA, SQL, Python, Java, C#, Microsoft Fabric, Power BI, Multiple Power Strategies &amp; Standards</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cat">Operational Excellence:</td>
+                        <td class="skill-items">Continuous Process Improvement, Agile/Scrum/SAFe Delivery, Risk Mitigation, Cross-functional Stakeholder Alignment</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="cv-section">
+            <div class="cv-section-title">// Professional Experience</div>
+
+            <!-- WNS Global Services -->
+            <article class="cv-job">
+                <div class="cv-job-header">
+                    <span class="cv-job-company">WNS Global Services</span>
+                    <span class="cv-job-dates">Sep 2025 – Present</span>
+                </div>
+                <div class="cv-job-subhead">
+                    <span class="cv-job-title">Test Lead / Senior QA Automation Engineer</span>
+                    <span class="cv-job-loc">Sydney, Australia</span>
+                </div>
+                <p class="cv-job-desc">Digital transformation and BPM enterprise delivering automated solutions worldwide. (https://www.wns.com/)</p>
+                <ul class="cv-bullets">
+                    <li>Direct end-to-end quality assurance governance, leading automated testing frameworks and verification pipelines across high-volume digital workflows.</li>
+                    <li>Oversee dedicated test laboratory staging environments, establishing standard calibration and execution protocols that expanded automated regression coverage from 35% to 85%.</li>
+                    <li>Drive external supplier integration quality by auditing technical interfaces and establishing automated quality gates, reducing defect slippage to UAT by 45%.</li>
+                    <li>Track and monitor real-time system performance, leveraging Azure DevOps pipelines to compress full regression cycles from 5 days to under 18 hours.</li>
+                    <li>Excel in doing rigorous root cause investigations on escalated defects, translating complex technical findings into clear risk assessments for executive stakeholders.</li>
+                    <li>Facilitate cross-functional Agile sprint ceremonies with international product and engineering partners to refine technical requirements and prevent defect injection early in the SDLC.</li>
+                </ul>
+            </article>
+
+            <!-- RAA -->
+            <article class="cv-job">
+                <div class="cv-job-header">
+                    <span class="cv-job-company">RAA (Royal Automobile Association)</span>
+                    <span class="cv-job-dates">Apr 2023 – Sep 2025</span>
+                </div>
+                <div class="cv-job-subhead">
+                    <span class="cv-job-title">Test Lead / Senior QA Engineer</span>
+                    <span class="cv-job-loc">Adelaide, Australia</span>
+                </div>
+                <p class="cv-job-desc">South Australia's premier member organisation providing motor, home, and travel insurance, roadside emergency dispatch, and vehicle fleet member services. (https://www.raa.com.au)</p>
+                <ul class="cv-bullets">
+                    <li>Spearheaded the end-to-end quality assurance strategy across roadside fleet dispatch, asset tracking, motor policy systems, and digital portals.</li>
+                    <li>Managed software and connected device testing in dedicated laboratory environments, validating vehicle tracking units, GPS communication, and microservice transactions.</li>
+                    <li>Assessed external supplier software deliverables and data feeds, ensuring stringent adherence to technical specifications and cutting defect resolution cycles by 35%.</li>
+                    <li>Championed defect prevention and root cause analysis across fleet tracking services, isolating system bottlenecks to drive continuous process improvement.</li>
+                    <li>Authored complex SQL validation suites to safeguard transactional integrity, data consistency, and connected asset reliability across high-concurrency databases.</li>
+                    <li>Coordinated with international vendor partners and internal stakeholders, successfully building standardized test protocols and mentoring regional teams.</li>
+                </ul>
+            </article>
+
+            <!-- Honeywell -->
+            <article class="cv-job">
+                <div class="cv-job-header">
+                    <span class="cv-job-company">Honeywell</span>
+                    <span class="cv-job-dates">Jul 2022 – Jun 2023</span>
+                </div>
+                <div class="cv-job-subhead">
+                    <span class="cv-job-title">Test Engineer</span>
+                    <span class="cv-job-loc">Adelaide, Australia</span>
+                </div>
+                <p class="cv-job-desc">Global technology leader developing safety, security, and industrial automation solutions. (http://www.honeywell.com)</p>
+                <ul class="cv-bullets">
+                    <li>Formulated and executed multi-tier test plans for industrial automation, warehouse management, and building systems platforms.</li>
+                    <li>Managed laboratory test configurations and simulated hardware data streams to verify sensor telemetry, system reliability, and overall performance.</li>
+                    <li>Partnered with third-party component supplier teams to evaluate firmware/software releases, identifying critical integration bugs prior to field deployment.</li>
+                    <li>Accelerated the average resolution time of complex database and API bottlenecks by 40% through systematic root cause analysis and proactive monitoring via Splunk and AWS CloudWatch.</li>
+                    <li>Streamlined testing procedures across enterprise release schedules, cutting overall regression cycles by 50% through reusable automation libraries.</li>
+                </ul>
+            </article>
+
+            <!-- Optum - Project Test Lead -->
+            <article class="cv-job">
+                <div class="cv-job-header">
+                    <span class="cv-job-company">Optum</span>
+                    <span class="cv-job-dates">Dec 2018 – Jul 2022</span>
+                </div>
+                <div class="cv-job-subhead">
+                    <span class="cv-job-title">Project Test Lead</span>
+                    <span class="cv-job-loc">Hyderabad, India</span>
+                </div>
+                <p class="cv-job-desc">Global health services and digital technology company operating in 150+ countries. (https://www.optum.com/)</p>
+                <ul class="cv-bullets">
+                    <li>Directed multi-squad quality assurance operations in a Scaled Agile (SAFe) environment, managing test strategy, resource forecasting, and formal quality sign-offs.</li>
+                    <li>Supervised system verification for core enterprise healthcare platforms, interfacing with external sourcing partners and global technology vendors.</li>
+                    <li>Implemented automated API and integration verification frameworks (REST, SOAP, GraphQL), elevating testing efficiency by 30%.</li>
+                    <li>Led cross-functional defect triage and technical reviews, identifying bugs systematically to safeguard release milestones and achieve a 25% increase in stakeholder satisfaction.</li>
+                    <li>Mentored and built technical capabilities across distributed testing teams, standardizing quality assurance metrics and best practices across the organization.</li>
+                </ul>
+            </article>
+
+            <!-- Optum - Senior QA Analyst -->
+            <article class="cv-job">
+                <div class="cv-job-header">
+                    <span class="cv-job-company">Optum</span>
+                    <span class="cv-job-dates">Sep 2011 – Dec 2018</span>
+                </div>
+                <div class="cv-job-subhead">
+                    <span class="cv-job-title">Senior QA Analyst / QA Analyst</span>
+                    <span class="cv-job-loc">Hyderabad, India</span>
+                </div>
+                <ul class="cv-bullets">
+                    <li>Authored comprehensive test plans, detailed test cases, and Requirements Traceability Matrices (RTM) for multi-tier enterprise applications.</li>
+                    <li>Executed rigorous functional, integration, regression, and performance verification across application and database layers.</li>
+                    <li>Published weekly technical quality metrics and defect dashboards, delivering actionable insights to senior leadership for process improvement.</li>
+                    <li>Enhanced core test workflows and tool utilization by 15%, ensuring robust verification across an expansive enterprise network.</li>
+                </ul>
+            </article>
+
+            <!-- Earlier Roles -->
+            <div style="margin-top: 1.25rem;">
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; color: #444; margin-bottom: 0.5rem; text-transform: uppercase;">Earlier Career History</div>
+                <ul class="cv-bullets">
+                    <li><strong>Associate, Prog/Analysis</strong> · NetCrackers, Hyderabad, India (May 2009 – Sep 2011)</li>
+                    <li><strong>Senior Software Engineer</strong> · Capgemini, Hyderabad, India (Jul 2008 – May 2009)</li>
+                    <li><strong>Consultant</strong> · Capgemini Consulting, Mumbai, India (Dec 2006 – Jul 2008)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Qualifications & Education -->
+        <section class="cv-section">
+            <div class="cv-section-title">// Qualifications &amp; Education</div>
+            <div class="cv-edu-grid">
+                <div class="cv-edu-item">
+                    <div class="cv-edu-degree">Master of Computer Applications (M.C.A.)</div>
+                    <div class="cv-edu-school">University of Madras, India · 2004</div>
+                </div>
+                <div class="cv-edu-item">
+                    <div class="cv-edu-degree">Bachelor of Science (B.Sc.) in Computer Science</div>
+                    <div class="cv-edu-school">Sri Krishnadevaraya University, India · 2001</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Certifications -->
+        <section class="cv-section">
+            <div class="cv-section-title">// Professional Certifications</div>
+            <div class="cv-certs-grid">
+                <div class="cv-cert-item">
+                    <div class="cv-cert-name">Project Management Professional (PMP)</div>
+                    <div class="cv-cert-org">Project Management Institute (PMI)</div>
+                </div>
+                <div class="cv-cert-item">
+                    <div class="cv-cert-name">Certified SAFe Agilist</div>
+                    <div class="cv-cert-org">Scaled Agile, Inc.</div>
+                </div>
+                <div class="cv-cert-item">
+                    <div class="cv-cert-name">SAFe 4.0 Product Manager / Product Owner (PM/PO)</div>
+                    <div class="cv-cert-org">Scaled Agile, Inc.</div>
+                </div>
+                <div class="cv-cert-item">
+                    <div class="cv-cert-name">Professional Scrum Master I (PSM-1)</div>
+                    <div class="cv-cert-org">Scrum.org</div>
+                </div>
+                <div class="cv-cert-item" style="grid-column: span 2;">
+                    <div class="cv-cert-name">Disciplined Agile Scrum Master (DASM)</div>
+                    <div class="cv-cert-org">Project Management Institute (PMI)</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
